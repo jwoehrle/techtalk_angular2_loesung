@@ -1,0 +1,14 @@
+<h2>User details</h2>
+
+<div *ngIf="!user">Loading user ...</div>
+<div *ngIf="user">
+
+    <a [routerLink]="['UserList']">Back</a>
+    <div>
+        <label>Name:</label> {{user.name}}
+    </div>
+    <div>
+        <label>Phone:</label> {{user.phone}}
+    </div>
+
+</div>

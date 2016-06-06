@@ -1,0 +1,9 @@
+
+<h2>List of users</h2>
+
+Name: <input  (input)="filter($event.target.value)"/>
+<ul>
+    <li *ngFor="let user of (filteredUsers )" (click)="onUserSelected(user)">
+        {{user.name}}
+    </li>
+</ul>
